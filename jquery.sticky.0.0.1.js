@@ -33,12 +33,7 @@
 				var position = $(settings.releaseAt).position();
 
 			}
-			console.log('position.top ==== ' + position.top);
-			console.log('window height ==== ' + window.innerHeight);
-			console.log('scrollAmt === ' + scrollAmt);
-			console.log('');
-
-			
+				
 			
 			if(scrollAmt >= (elementTopPosition - window.innerHeight) + $element.height()) {
 				$element.css({'position':currentPosition,'bottom':currentBottom});
