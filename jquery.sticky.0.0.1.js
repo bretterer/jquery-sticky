@@ -1,4 +1,13 @@
-(function($) {
+/**
+ * jQuery Sticky
+ * A very lightweight jQuery plugin to make an element sticky until a defined element is in view
+ * 
+ * Licensed under the MIT license.
+ * Copyright 2013 Brian Retterer
+ * https://github.com/bretterer
+ */
+
+ (function($) {
 	
 	$.fn.sticky = function( options ) {
 
