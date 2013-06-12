@@ -34,7 +34,7 @@
 </div>
 <div id="footer"></div>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
 <script type="text/javascript" src="jquery.sticky.0.0.1.js"></script>
 
 <script>

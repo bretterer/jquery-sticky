@@ -7,12 +7,12 @@
  * https://github.com/bretterer
  */
 
- (function($) {
+ ;(function($) {
 	
 	$.fn.sticky = function( options ) {
 
-		var $element = $(this);
-		var elementTopPosition = $(this).position().top;
+		var $element = this;
+		var elementTopPosition = $element.position().top;
 
 		//get current style we are going to overwrite
 		var currentPosition = $element.css('position');
@@ -27,6 +27,7 @@
 		}, options);
 
 		setPosition();
+		onPageScroll();
 
 		$(window).bind('scroll',onPageScroll);
 
@@ -51,6 +52,8 @@
 				setPosition();
 			}
 		}
+
+		return this;
 
 	}
 	
