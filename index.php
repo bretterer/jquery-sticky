@@ -14,9 +14,27 @@
 
 		.content {
 			width:100%;
-			height:1500px;
+			height:1000px;
 			color:white;
 			background-color:blue;
+			opacity:.5;
+			transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+		}
+		.content2 {
+			width:100%;
+			height:1000px;
+			color:white;
+			background-color:green;
+			opacity:.5;
+			transition: opacity .25s ease-in-out;
+-moz-transition: opacity .25s ease-in-out;
+-webkit-transition: opacity .25s ease-in-out;
+		}
+
+		.content:hover, .content2:hover {
+			opacity: 1;
 		}
 
 		#footer {
@@ -28,13 +46,17 @@
 	</style>
 </head>
 <body>
-<div class="content"></div>
+<ul>
+<li class="content"></li>
+<li class="content2"></li>
+</ul>
 <div class="sticky">
 	Hello World!
 </div>
 <div id="footer"></div>
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
 <script type="text/javascript" src="jquery.sticky.0.0.1.js"></script>
 
 <script>
